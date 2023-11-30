@@ -5,12 +5,15 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <h1>All Skills</h1>
     <ul>
       <% skills.forEach(function(t) { %>
         <li>
           <a href="/skills/<%= t.id %>"><%= t.skill %></a>
+          <%= t.level %>
         </li>
       <% }); %>
     </ul>
+    <a href = "/skills/new">Add Skill</a>
   </body>
 </html>
